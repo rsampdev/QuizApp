@@ -20,14 +20,12 @@
 
 @implementation ViewController
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.questions = @[ @"What is your name?", @"What is your quest?", @"What is your favorite color?" ];
     self.answers = @[ @"Sir Galahad of Camelot", @"I seek the Grail", @"Blue. No, yel-" ];
     self.questionLabel.text = self.questions[self.currentQuestionIndex];
 }
-
 
 - (IBAction)showNextQuestion:(id)sender {
     self.currentQuestionIndex++;
